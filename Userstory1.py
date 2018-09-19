@@ -22,7 +22,19 @@ Result = str(Cost)
 print("That will be "+Result+" before taxes ")
 
 #Part2
-tax = float(Result * hsttaxes)
-
+Result2 = float(Result)
+tax = (Result2 * hsttaxes)
+tax = round(tax, 2)
+tax = str(tax)
 
 print("Your tax will be " +tax+"")
+
+#Part3
+
+tax = float(tax)
+Result = float(Result)
+final = (tax + Result)
+final = round(final, 2)
+final = str(final)
+
+print("Your total will be " +final+"")
